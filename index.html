@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Recipe App</title>
-  </head>
-  <body>
-    <h1>Finding Recipe</h1>
-    <input type="text" placeholder="Search" id="search-box" />
-    <button id="search-button">It's Search Button</button>
-    <div id="recipe-container"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Search</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="welcome-container">
+    <h1>Welcome to Recipe Search</h1>
+    <button id="start-button">Start</button>
+  </div>
   
-    <script type="module" src="app.js"></script>
-  </body>
+  <div id="app-container">
+    <input type="text" id="search-box" placeholder="Search for a meal">
+    <button id="search-button">Search</button>
+    <button id="surprise-button">Surprise Me</button>
+    <div id="recipe-container"></div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
 </html>

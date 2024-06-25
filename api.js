@@ -1,12 +1,17 @@
-import { URL_API } from './data.js';
+export const getApi = async (query) => {
+  const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`;
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  return response.json();
+};
 
-export  async function getApi(query) { 
-    try {
-        const response = await fetch(`${URL_API}${query}`);
-        const data = await response.json();
-        return data
-
-    } catch (error) {
-      console.error("An error occurred while fetching the API:", error);
-        
-    }}
+export const getRandomMeal = async () => {
+  const url = `https://www.themealdb.com/api/json/v1/1/random.php`;
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  return response.json();
+};

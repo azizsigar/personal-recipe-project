@@ -1,36 +1,24 @@
+* {
+  margin: auto;
+  padding: 3px;
+  box-sizing: border-box;
+}   
 body {
-    background-color: wheat;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
- 
+  font-family: 'Roboto', sans-serif;
+  background-color: bisque;
 }
-.meal-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: auto;
-    padding: 1rem;
-}
-img{
-    width: 10rem;
-    height: 10rem;
-    border-radius: 10px;
-}
-.meal-instructions {
-    display: none; /* Initially hidden */
-  }
-  .meal-instructions.show {
-    display: block; /* Visible when 'show' class is present */
-  }
-  
 
-@media (min-width: 768px) {
-    .hidden-content{
-        visibility: visible;
-    }
+img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10px;
+}
+#app-container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+#welcome-container {
+  text-align: center;
+  margin-top: 50px;
 }
