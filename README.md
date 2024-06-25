@@ -2,6 +2,12 @@
 
 Welcome to the Recipe Search Application! This web application allows users to search for recipes by name and get detailed information about different meals, including instructions, images, and categories. Additionally, users can use the "Surprise Me" feature to get a random meal suggestion.
 
+## Deployed Application
+
+### [Click here to access the deployed application](https://azizsigar.github.io/personal-recipe-project/)
+
+
+
 ## Features
 
 - **Search for Recipes:** Enter a meal name to search for related recipes.
