@@ -1,4 +1,6 @@
-<img width="1440" alt="Screenshot 2024-06-25 at 10 04 06" src="https://github.com/azizsigar/personal-recipe-project/assets/103178186/afea0025-6504-4d62-9854-ad0c87771f43"># Recipe Search Application
+<img width="1440" alt="Screenshot 2024-06-25 at 10 04 06" src="https://github.com/azizsigar/personal-recipe-project/assets/103178186/afea0025-6504-4d62-9854-ad0c87771f43">
+
+# Recipe Search Application
 
 Welcome to the Recipe Search Application! This web application allows users to search for recipes by name and get detailed information about different meals, including instructions, images, and categories. Additionally, users can use the "Surprise Me" feature to get a random meal suggestion.
 
