@@ -1,13 +1,13 @@
-import { URL_API } from "./apikeys.js";
+import { getApi } from "./api.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const button = document.getElementById("search-button");
   const searchBox = document.getElementById("search-box");
   const recipeContainer = document.getElementById("recipe-container");
 
-  const fetchRecipes = async (query) => {
+  const initApp = async () => {
     try {
-      const data = await fetch(`${URL_API}${query}`);
+      getApi;
       const response = await data.json();
       console.log(response);
 
@@ -68,7 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     const searchValue = searchBox.value.trim();
     if (searchValue) {
-      fetchRecipes(searchValue);
+      initApp(searchValue);
+    } else {
+      console.log("please type something in the search box");
+      // add enhancement to show a message to the user
     }
   });
 });
